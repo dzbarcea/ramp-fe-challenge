@@ -16,6 +16,8 @@ export function useTransactionsByEmployee(): TransactionsByEmployeeResult {
         }
       )
 
+      console.log(`data: ${data}`)
+
       setTransactionsByEmployee(data)
     },
     [fetchWithCache]
